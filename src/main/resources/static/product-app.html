@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Add / Update Product</h2>
+    <form id="productForm">
+      
+      <label>Product ID:</label>
+      <input type="number" id="pId" required>
+      
+      <label>Product Name:</label>
+      <input type="text" id="pName" required>
+      
+      <label>Description:</label>
+      <textarea id="pDescription" rows="3" required></textarea>
+      
+      <label>Price:</label>
+      <input type="number" id="pPrice" required>
+      
+      <label>Quantity:</label>
+      <input type="number" id="pQty" required>
+      
+      <label>Sale Time:</label>
+      <input type="datetime-local" id="pSaleTime" required>
+      
+      <button type="submit">Save Product</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Search Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;   /* horizontal center */
+            align-items: center;       /* vertical center */
+            height: 100vh;             /* full viewport height */
+            background-color: #f0f0f0; /* optional background */
+            margin: 0;
+        }
+
+        .search-form {
+            text-align: center;
+            color: blue;               /* heading & text color */
+            font-family: Arial, sans-serif;
+        }
+
+        input[type="text"] {
+            padding: 8px 12px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-right: 8px;
+        }
+
+        button {
+            padding: 8px 16px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-form">
+        <h1>Search Page</h1>
+        
+        <form action="/save" method="post">
+            <input type="text" name="query" placeholder="Enter search term">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</body>
+</html>
